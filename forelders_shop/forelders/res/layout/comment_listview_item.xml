@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/white_color"
+	android:padding="@dimen/kaka_5_dip" >
+	<TextView
+		android:id="@+id/user_name"
+		style="@style/sumary_color_h5_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/kaka_5_dip"
+		android:layout_marginRight="@dimen/kaka_5_dip"
+		android:layout_marginTop="@dimen/kaka_8_dip"
+		android:gravity="center" />
+	<TextView
+		android:id="@+id/user_time"
+		style="@style/sumary_color_h5_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/user_name"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="@dimen/kaka_5_dip"
+		android:layout_marginRight="@dimen/kaka_15_dip"
+		android:layout_marginTop="@dimen/kaka_8_dip"
+		android:gravity="center" />
+	<TextView
+		android:id="@+id/message"
+		style="@style/sumary_color_h5_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/user_name"
+		android:layout_marginBottom="@dimen/kaka_8_dip"
+		android:layout_marginLeft="@dimen/kaka_5_dip"
+		android:layout_marginTop="@dimen/kaka_8_dip"
+		android:gravity="left|center" />
+</RelativeLayout>

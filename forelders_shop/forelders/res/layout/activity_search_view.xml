@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <LinearLayout
+        android:id="@+id/search_reload_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/search_detail_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/kaka_4_dip"
+            android:layout_marginRight="@dimen/kaka_4_dip"
+            android:layout_marginTop="@dimen/kaka_15_dip"
+            android:horizontalSpacing="@dimen/kaka_15_dip"
+            android:listSelector="@drawable/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/kaka_15_dip" />
+
+        <ListView
+            android:id="@+id/search_keyword_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray_6e"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/bg_white_gray"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/kaka_43_dip" >
+
+            <TextView
+                android:id="@+id/search_title"
+                style="@style/black_h4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/kaka_8_dip"
+                android:text="@string/hot_search_text"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/rechange_btn"
+                style="@style/text_center_h4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_press_gray"
+                android:drawableLeft="@drawable/search_rechange"
+                android:padding="@dimen/kaka_5_dip"
+                android:text="@string/rechange_text"
+                android:textColor="@color/status_run"
+                android:textSize="@dimen/h4" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/loading" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/kaka_5_dip" >
+
+        <TextView
+            android:id="@+id/comment_code_title"
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_5_dip"
+            android:layout_marginTop="@dimen/kaka_8_dip"
+            android:text="@string/score_lab" />
+
+        <RatingBar
+            android:id="@+id/comment_rating_bar"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/comment_code_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_8_dip"
+            android:layout_toRightOf="@+id/comment_code_title"
+            android:isIndicator="false"
+            android:max="50"
+            android:numStars="5"
+            android:progress="50"
+            android:stepSize="1.0" />
+
+        <TextView
+            android:id="@+id/comment_status"
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/kaka_5_dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/comment_et"
+        style="@style/sumary_color_h4_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/kaka_5_dip"
+        android:layout_marginRight="@dimen/kaka_5_dip"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="left"
+        android:hint="@string/comment_hint"
+        android:lines="8" />
+
+    <Button
+        android:id="@+id/submit_comment"
+        style="@style/text_center_h4"
+        android:layout_width="@dimen/kaka_65_dip"
+        android:layout_height="@dimen/kaka_30_dip"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:text="@string/comment_lab"
+        android:textColor="@color/status_run" />
+
+</LinearLayout>

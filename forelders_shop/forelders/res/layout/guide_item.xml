@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/guide_item"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<ImageView
+		android:id="@+id/guide_img"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:contentDescription="@null"
+		android:scaleType="fitXY" />
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/kaka_200_dip"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical" >
+		<Button
+			android:id="@+id/start"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/kaka_50_dip"
+			android:layout_marginRight="@dimen/kaka_50_dip"
+			android:background="@drawable/bg_cor_gray_dark"
+			android:gravity="center"
+			android:padding="@dimen/kaka_8_dip"
+			android:text="@string/guide_start"
+			android:visibility="gone" />
+	</FrameLayout>
+</RelativeLayout>

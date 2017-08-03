@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/account_hint"
+        android:singleLine="true" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_mail"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/email_hint"
+        android:singleLine="true" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/pwd_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/pwd_repeat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/pwd_repeat_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/text_center_h2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_45_dip"
+        android:layout_marginBottom="@dimen/kaka_8_dip"
+        android:layout_marginLeft="@dimen/kaka_8_dip"
+        android:layout_marginRight="@dimen/kaka_8_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:text="@string/register"
+        android:textColor="@color/status_run" />
+
+    <TextView
+        android:id="@+id/agree_register"
+        style="@style/text_center_h5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/status_wait" />
+
+    <TextView
+        android:id="@+id/login_btn"
+        style="@style/text_center_h5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/kaka_5_dip"
+        android:padding="@dimen/kaka_5_dip"
+        android:text="@string/has_account_tip"
+        android:textColor="@color/soft_base_bg" />
+
+</LinearLayout>

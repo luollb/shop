@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/news_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_6e"
+         >
+
+        <ProgressBar
+            android:id="@+id/news_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/kaka_5_dip"
+            android:progressDrawable="@drawable/progressbar_style"
+            android:visibility="gone" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_progress"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/relate_news_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/webview"
+            android:layout_marginTop="@dimen/kaka_8_dip"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/black_h4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/kaka_8_dip"
+                android:layout_marginRight="@dimen/kaka_3_dip"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="@string/relate_news" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/gray_6C" />
+
+            <cn.cy.mobilegames.yyjia.forelders.util.view.MyListView
+                android:id="@+id/news_relate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/kaka_5_dip"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/kaka_15_dip"
+        android:text="@string/set_person_img"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_pick_photo_from_default"
+        style="@style/text_center_h4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/kaka_15_dip"
+        android:layout_marginRight="@dimen/kaka_15_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:padding="@dimen/kaka_8_dip"
+        android:text="@string/system_person_img"
+        android:textColor="@color/status_run"
+        android:textSize="@dimen/h3" />
+
+    <Button
+        android:id="@+id/btn_pick_photo_from_album"
+        style="@style/text_center_h4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/kaka_15_dip"
+        android:layout_marginRight="@dimen/kaka_15_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:padding="@dimen/kaka_8_dip"
+        android:text="@string/select_from_phote"
+        android:textColor="@color/status_run" />
+
+    <Button
+        android:id="@+id/btn_take_photo"
+        style="@style/text_center_h4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/kaka_15_dip"
+        android:layout_marginRight="@dimen/kaka_15_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:padding="@dimen/kaka_8_dip"
+        android:text="@string/take_phote"
+        android:textColor="@color/status_run" />
+
+    <Button
+        android:id="@+id/btn_cancel_dialog"
+        style="@style/text_center_h4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/kaka_15_dip"
+        android:layout_marginLeft="@dimen/kaka_15_dip"
+        android:layout_marginRight="@dimen/kaka_15_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:padding="@dimen/kaka_8_dip"
+        android:text="@string/cancel"
+        android:textColor="@color/status_run" />
+
+</LinearLayout>

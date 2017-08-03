@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/nav_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+    <!-- Loading -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading" />
+
+    <TextView
+        android:id="@+id/no_comment"
+        style="@style/text_center_h0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="@string/no_comment"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/comment_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_below="@+id/nav_view"
+        android:background="@color/white"
+        android:divider="@drawable/gray_color"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/nav_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_6e" >
+
+        <Button
+            android:id="@+id/do_comment_btn"
+            style="@style/text_center_h4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/kaka_15_dip"
+            android:background="@drawable/status_run_seletor"
+            android:padding="@dimen/kaka_8_dip"
+            android:text="@string/do_comment"
+            android:textColor="@color/status_run" />
+    </RelativeLayout>
+
+</RelativeLayout>

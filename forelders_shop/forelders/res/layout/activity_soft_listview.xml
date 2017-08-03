@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/cn.cy.mobilegames.yyjia.forelders"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_6e"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/real_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <cn.cy.mobilegames.yyjia.forelders.util.view.DropDownListView
+            android:id="@id/listview_soft_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/gray_6e"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/bg_press_gray"
+            listViewAttr:isAutoLoadOnBottom="true"
+            listViewAttr:isDropDownStyle="false"
+            listViewAttr:isOnBottomStyle="true" />
+
+        <ImageView
+            android:id="@+id/to_top_btn"
+            android:layout_width="@dimen/kaka_35_dip"
+            android:layout_height="@dimen/kaka_35_dip"
+            android:layout_alignBottom="@+id/listview_soft_show"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/kaka_6_dip"
+            android:background="@drawable/bg_press_gray"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/to_bottom_btn"
+            android:layout_width="@dimen/kaka_35_dip"
+            android:layout_height="@dimen/kaka_35_dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/listview_soft_show"
+            android:layout_margin="@dimen/kaka_6_dip"
+            android:background="@drawable/bg_press_gray"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/loading" />
+    </RelativeLayout>
+
+</LinearLayout>

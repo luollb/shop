@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/cn.pedant.sweetalert"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/sweet_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:id="@+id/error_frame"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sweet_error_circle" />
+
+        <ImageView
+            android:id="@+id/error_x"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/sweet_error_center_x" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/success_frame"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sweet_success_bow" />
+
+        <View
+            android:id="@+id/mask_right"
+            android:layout_width="35dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-13dp"
+            android:background="@android:color/white" />
+
+        <View
+            android:id="@+id/mask_left"
+            android:layout_width="21dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-3dp"
+            android:background="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sweet_success_circle" />
+
+        <cn.pedant.sweetalert.SuccessTickView
+            android:id="@+id/success_tick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/warning_frame"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sweet_warning_circle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/sweet_warning_sigh" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <cn.pedant.sweetalert.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            wheel:progressIndeterminate="true" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#008bea" />
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sweet_button_close_bg_selector"
+            android:focusable="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- Content -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="#797979"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Ignore CheckBox -->
+
+    <CheckBox
+        android:id="@+id/ignore_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:button="@drawable/sweet_button_check_selector"
+        android:text="@string/Ignore_text"
+        android:textColor="#000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/dialog_gray_button"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sweet_gray_button_background"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            style="@style/dialog_blue_button"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_ok" />
+
+        <Button
+            android:id="@+id/ignore_button"
+            style="@style/dialog_gray_button"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dialog_ignore"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

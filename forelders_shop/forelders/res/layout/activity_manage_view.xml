@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manage_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_6d"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/manage_down_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_70_dip"
+        android:layout_marginLeft="@dimen/kaka_8_dip"
+        android:layout_marginRight="@dimen/kaka_8_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/bg_white_gray" >
+
+        <ImageView
+            android:id="@+id/down_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_8_dip"
+            android:contentDescription="@null"
+            android:src="@drawable/manage_down" />
+
+        <TextView
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/down_img"
+            android:text="@string/download_manage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_uninstall_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_70_dip"
+        android:layout_marginLeft="@dimen/kaka_8_dip"
+        android:layout_marginRight="@dimen/kaka_8_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/bg_white_gray" >
+
+        <ImageView
+            android:id="@+id/uninstall_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_8_dip"
+            android:contentDescription="@null"
+            android:src="@drawable/manage_down" />
+
+        <TextView
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/uninstall_img"
+            android:text="@string/download_uninstall" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_update_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_70_dip"
+        android:layout_marginLeft="@dimen/kaka_8_dip"
+        android:layout_marginRight="@dimen/kaka_8_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/bg_white_gray" >
+
+        <ImageView
+            android:id="@+id/update_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_8_dip"
+            android:contentDescription="@null"
+            android:src="@drawable/manage_update" />
+
+        <TextView
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/update_img"
+            android:text="@string/download_update" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_favorite_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_70_dip"
+        android:layout_marginLeft="@dimen/kaka_8_dip"
+        android:layout_marginRight="@dimen/kaka_8_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:background="@drawable/bg_white_gray"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/favorite_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/kaka_8_dip"
+            android:contentDescription="@null"
+            android:src="@drawable/manage_favorite" />
+
+        <TextView
+            style="@style/black_h4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/favorite_img"
+            android:text="@string/download_favorite" />
+    </RelativeLayout>
+
+</LinearLayout>

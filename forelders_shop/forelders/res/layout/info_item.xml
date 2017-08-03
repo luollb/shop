@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/kaka_4_dip" >
+
+    <TextView
+        android:id="@+id/info_title"
+        style="@style/text_h7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/kaka_6_dip"
+        android:layout_marginLeft="@dimen/kaka_5_dip"
+        android:layout_marginRight="@dimen/kaka_4_dip"
+        android:layout_marginTop="@dimen/kaka_6_dip"
+        android:background="@drawable/cornors_purple_dark"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/new_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/kaka_6_dip"
+        android:contentDescription="@null"
+        android:src="@drawable/news_dot"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/info_content"
+        style="@style/text_h6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/kaka_8_dip"
+        android:layout_marginLeft="@dimen/kaka_2_dip"
+        android:layout_marginTop="@dimen/kaka_8_dip"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/gray_64" />
+
+    <TextView
+        android:id="@+id/info_time"
+        style="@style/text_h6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/kaka_5_dip"
+        android:layout_marginRight="@dimen/kaka_5_dip"
+        android:gravity="center"
+        android:textColor="@color/gray_6C" />
+
+</LinearLayout>

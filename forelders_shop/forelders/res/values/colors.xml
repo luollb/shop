@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共的 -->
+    <color name="gray_1">#969696</color>
+    <color name="gray_2">#DCDCDC</color>
+    <color name="gray_3">#787878</color>
+    <color name="tab_main_text_1">#aaa</color>
+    <color name="tab_main_text_2">#74b5f7</color>
+    <color name="tab_top_text_1">#aaa</color>
+    <color name="tab_top_text_2">#000</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="common_white">#ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <color name="list_view_bg_color">#00000000</color>
+    <color name="splash_notification_bg">#7FFF</color>
+    <color name="splash_color">#7FFF</color>
+    <color name="background_color">#F0F0F0</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <color name="page_viewer_margin_color">#007800</color>
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <!--  -->
+    <color name="soft_light_blue">#33CCFF</color>
+    <color name="soft_base_bg">#0097ff</color>
+    <color name="soft_open_bg">#f75700</color>
+    <color name="soft_pause_bg">#efefef</color>
+    <color name="soft_success_bg">#FF7256</color>
+    <color name="soft_failure_bg">#e23939</color>
+    <color name="gray_tran">#00000000</color>
+    <color name="gray_ef">#efefef</color>
+    <color name="gray_f8">#f8f8f8</color>
+    <color name="gray_e1">#E1E6F6</color>
+    <color name="gray_6e">#eeeeee</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_6b">#bbbbbb</color>
+    <color name="gray_64">#444444</color>
+    <color name="gray_6C">#cccccc</color>
+    <color name="tab_gray">#828181</color>
+    <color name="tab_blue">#077ae2</color>
+    <color name="tab_bg">#dfdfdf</color>
+    <color name="pic_layout_bg">#ACDBC9</color>
+    <color name="status_wait">#999999</color>
+    <color name="status_run">#0096ff</color>
+    <color name="status_run_press">#00baff</color>
+    <color name="status_failure">#ff0000</color>
+    <color name="status_open">#FF9512</color>
+    <color name="status_install">#f75700</color>
+    <color name="status_update">#31DA0F</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_6d">#dddddd</color>
+    <color name="gray_text_bg">#884B4F52</color>
+    <color name="tab_text_color">#B4B4B4</color>
+    <color name="tab_font_black">#FF404040</color>
+    <color name="tab_text_gray">#FF808080</color>
+    <color name="tab_text_gray1">#787878</color>
+    <color name="tab_app_num">#FFB400</color>
+    <color name="hot1">#FF5000</color>
+    <color name="hot2">#FF7800</color>
+    <color name="hot3">#FF9600</color>
+    <color name="hot4">#FFB400</color>
+    <color name="divider_gray">#FFDFDFDF</color>
+    <color name="vertical_splitter_color">#C8C8C8</color>
+    <color name="text_dark_gray">#FF505050</color>
+    <color name="info_font_light_orange">#FFFFAD00</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black_64">#444444</color>
+    <color name="green_grass">#44d183</color>
+    <color name="green_cyan">#22d6cb</color>
+    <color name="red_dark_bg">#ef4b62</color>
+    <color name="red_rose_bg">#d6326c</color>
+    <color name="red_rose">#e838ea</color>
+    <color name="orange_yellow">#ff5500</color>
+    <color name="orange_dark">#ff4e00</color>
+    <color name="blue_dark">#065FF8</color>
+    <color name="blue_light_bg">#00d2ff</color>
+    <color name="progress_blue_dark">#077ae2</color>
+    <color name="progress_blue_light">#00deff</color>
+    <color name="purple_bg">#bf59ff</color>
+    <color name="purple_dark_bg">#6c68ff</color>
+    <color name="yellow_orange_bg">#ff5500</color>
+    <color name="text_sumary_color">#434343</color>
+    <!-- 二维码 -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <drawable name="gray_64">#444444</drawable>
+    <drawable name="orange">#ff5500</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="blue">#0097ff</drawable>
+
+    <!-- sweetalertdialog -->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+</resources>

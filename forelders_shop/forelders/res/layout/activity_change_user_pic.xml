@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/back_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <RelativeLayout
+        android:id="@+id/pic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_120_dip"
+        android:layout_below="@+id/back_layout"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/pic_bg"
+            android:layout_width="@dimen/kaka_80_dip"
+            android:layout_height="@dimen/kaka_80_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/kaka_8_dip"
+            android:background="@drawable/default_img2"
+            android:contentDescription="@null"
+            android:src="@drawable/pic_change_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pic_bg"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pic_preview"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h4" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/pic_gridview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pic_layout"
+        android:background="@color/pic_layout_bg"
+        android:horizontalSpacing="@dimen/kaka_8_dip"
+        android:numColumns="3"
+        android:padding="@dimen/kaka_8_dip"
+        android:verticalSpacing="@dimen/kaka_15_dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/kaka_50_dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/kaka_5_dip"
+        android:paddingLeft="@dimen/kaka_30_dip"
+        android:paddingRight="@dimen/kaka_30_dip"
+        android:paddingTop="@dimen/kaka_5_dip" >
+
+        <Button
+            android:id="@+id/save_now_btn"
+            style="@style/text_center_h4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/status_run_seletor"
+            android:text="@string/save_now"
+            android:textColor="@color/status_run"
+            android:textSize="@dimen/h4" />
+    </RelativeLayout>
+
+</RelativeLayout>

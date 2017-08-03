@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/no_data"
+        android:visibility="gone" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.VerticalScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:measureAllChildren="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/gray_6d"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/subject_advert"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/kaka_160_dip"
+                android:background="@color/gray_6e"
+                android:contentDescription="@null"
+                android:scaleType="centerInside" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/subject_title"
+                    style="@style/black_h4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/kaka_8_dip"
+                    android:layout_marginLeft="@dimen/kaka_8_dip"
+                    android:layout_marginTop="@dimen/kaka_8_dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_below="@+id/subject_title"
+                    android:background="@color/gray_6C" />
+
+                <TextView
+                    android:id="@+id/subject_focus"
+                    style="@style/sumary_color_h5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/kaka_8_dip"
+                    android:layout_marginRight="@dimen/kaka_8_dip"
+                    android:layout_marginTop="@dimen/kaka_8_dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sub_summary"
+                style="@style/sumary_color_h6_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/kaka_5_dip"
+                android:background="@color/white"
+                android:gravity="left"
+                android:padding="@dimen/kaka_8_dip" />
+
+            <ListView
+                android:id="@+id/sub_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/gray_6e"
+                android:dividerHeight="1px"
+                android:listSelector="@drawable/bg_press_gray" />
+        </LinearLayout>
+    </cn.cy.mobilegames.yyjia.forelders.util.view.VerticalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/see_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/nav_title_view" />
+
+    <LinearLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_100_dip"
+        android:layout_margin="@dimen/kaka_5_dip"
+        android:baselineAligned="false" >
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/kaka_2_dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/first_ad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default" />
+
+            <TextView
+                android:id="@+id/first_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/kaka_20_dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:background="@color/gray_text_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h7" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/kaka_2_dip"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/second_ad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default" />
+
+            <TextView
+                android:id="@+id/second_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/kaka_20_dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:background="@color/gray_text_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h7" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.MyListView
+        android:id="@+id/item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/gray_6e"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

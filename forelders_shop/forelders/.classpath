@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/Banner_fat.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/SlideMenu_Library.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/SweetAlertDialog.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/SystemBarLibrary.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ToggleButtonLib.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/umeng-analytics-v6.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/universal-image-loader-1.9.2-with-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/volly-1.0.11.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

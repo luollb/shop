@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.cy.mobilegames.yyjia.forelders"
+    android:versionCode="181"
+    android:versionName="1.8.1">
+
+    <!-- Allows to send broadcasts on download completion -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- Allows access to the Download Manager -->
+    <permission
+        android:name="cn.cy.mobilegames.yyjia.forelders.ACCESS_DOWNLOAD_MANAGER"
+        android:description="@string/desc_downloadManager"
+        android:label="@string/lab_downloadManager"
+        android:protectionLevel="normal" />
+    <!-- Allows advanced access to the Download Manager -->
+    <permission
+        android:name="cn.cy.mobilegames.yyjia.forelders.ACCESS_DOWNLOAD_MANAGER_ADVANCED"
+        android:description="@string/desc_downloadManagerAdvanced"
+        android:label="@string/lab_downloadManagerAdvanced"
+        android:protectionLevel="normal" />
+    <!-- Allows to send broadcasts on download completion -->
+    <permission
+        android:name="cn.cy.mobilegames.yyjia.forelders.SEND_DOWNLOAD_COMPLETED_INTENTS"
+        android:description="@string/desc_downloadCompletedIntent"
+        android:label="@string/lab_downloadCompletedIntent"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="cn.cy.mobilegames.yyjia.forelders.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="cn.cy.mobilegames.yyjia.forelders.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="cn.cy.mobilegames.yyjia.forelders.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 挂载和反挂载的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读取手机状态 ,如来了新电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Permission Group -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="cn.cy.mobilegames.yyjia.forelders.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="cn.cy.mobilegames.yyjia.forelders.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- 设置权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name="cn.cy.mobilegames.yyjia.forelders.app.YYJiaApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.MainActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation|navigation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.BaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.AppScreenShotActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.QualityNewsDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.QualityNewsDetailOtherActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- detail -->
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.SoftDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.SoftDetailOtherActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"></activity>
+        <!-- search -->
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.SearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- comment -->
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.CommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.CommentListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- quality -->
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.QualitySubjectContentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.CateMoreActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.QualityNewsCateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <!-- manage -->
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.ProductListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.ui.DownloadListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.SizeLimitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.ManageFavoriteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.ManageUninstallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.ManageUpdateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.ChangePictureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.cy.mobilegames.yyjia.forelders.activity.UserAgreementActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <provider
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.DownloadProvider"
+            android:authorities="cn.cy.mobilegames.yyjia.forelders.download" />
+        <provider
+            android:name="cn.cy.mobilegames.yyjia.forelders.util.MarketProvider"
+            android:authorities="cn.cy.mobilegames.yyjia.forelders" />
+
+        <service android:name="cn.cy.mobilegames.yyjia.forelders.download.DownloadService" />
+
+        <receiver
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.DownloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.CompletedReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="cn.cy.mobilegames.yyjia.forelders.download.PackageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH" />
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_NEEDS_VERIFICATION" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- UMENG_PUSH -->
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:process=":channel"></service>
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengIntentService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.umeng.messge.registercallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.enablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.disablecallback.action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.umeng.message.message.handler.action" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umeng.message.UmengDownloadResourceService"
+            android:exported="false" />
+        <service
+            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.cy.mobilegames.yyjia.forelders.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.umeng.message.provider.MessageProvider"
+            android:authorities="cn.cy.mobilegames.yyjia.forelders.umeng.message"
+            android:exported="false"
+            android:process=":channel">
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+        <!-- UMENG_PUSH -->
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="abe1a0c31b797f800b59a30f3d296f7b" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58e772f04544cb08930012ae" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="zhinei_yyjia" />
+
+        <!-- 45app SDK uses -->
+        <meta-data
+            android:name="45app_cpid"
+            android:value="45app" />
+        <meta-data
+            android:name="45app_type"
+            android:value="tongjisdk" />
+        <!-- channel ID -->
+        <meta-data
+            android:name="45app_cid"
+            android:value="9" />
+    </application>
+
+</manifest>

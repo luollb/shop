@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_firset_recom"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/kaka_350_dip"
+    android:background="@color/white" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/no_data"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/real_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/first_com_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/first_com_tv"
+                style="@style/text_center_h5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/first_com_close_iv"
+                android:gravity="left"
+                android:padding="@dimen/kaka_5_dip"
+                android:text="@string/recommend_install"
+                android:textColor="@color/black_64" />
+
+            <ImageView
+                android:id="@+id/first_com_close_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:padding="@dimen/kaka_7_dip"
+                android:src="@drawable/icon_cancel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/first_com_close_iv"
+                android:background="@color/soft_base_bg" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/first_com_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/first_com_bottom"
+            android:layout_below="@+id/first_com_top" />
+
+        <RelativeLayout
+            android:id="@+id/first_com_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/kaka_35_dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/gray_6b" />
+
+            <Button
+                android:id="@+id/first_com_no_alert_btn"
+                style="@style/text_center_h4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/kaka_30_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/kaka_4_dip"
+                android:background="@drawable/status_run_seletor"
+                android:focusable="false"
+                android:paddingLeft="@dimen/kaka_8_dip"
+                android:paddingRight="@dimen/kaka_8_dip"
+                android:text="@string/no_alert_again"
+                android:textColor="@color/status_run" />
+
+            <Button
+                android:id="@+id/first_com_one_btn_install_btn"
+                style="@style/text_center_h4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/kaka_30_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/kaka_4_dip"
+                android:background="@drawable/status_run_seletor"
+                android:paddingLeft="@dimen/kaka_8_dip"
+                android:paddingRight="@dimen/kaka_8_dip"
+                android:text="@string/one_key_install"
+                android:textColor="@color/status_run" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

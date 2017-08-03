@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- 45app -->
+    <string name="no_data">No Data</string>
+    <string name="no_comment_data">No Comment Data</string>
+    <string name="no_more_data">No More Data</string>
+    <string name="network_time_out">Network exception,please check.</string>
+    <string name="PROJECT_NAME">ZhiNei</string>
+    <string name="DATABASE_NAME">ApplicationPlus</string>
+    <string name="DATABASE_VERSION">1</string>
+    <string name="app_name">45APP</string>
+    <string name="warn_exit_hint">Double Click To Exit</string>
+    <string name="scan_text">Please send the barcode in the frame scan</string>
+    <string name="loading_text">loading\u2026</string>
+    <string name="soft_name">unknown Soft</string>
+    <string name="tag_hint">Tag as the uppercase and lowercase letters, numbers, underline, Chinese, multiple separated by commas</string>
+    <string name="alias_hint">Alias as the uppercase and lowercase letters, numbers, underline</string>
+    <string name="style_hint">Style digital</string>
+    <!-- drop down -->
+    <string name="drop_down_list_header_default_text">click to refresh</string>
+    <string name="drop_down_list_header_pull_text">pull to refresh</string>
+    <string name="drop_down_list_header_release_text">release to refresh</string>
+    <string name="drop_down_list_header_loading_text">loading…</string>
+    <string name="drop_down_list_footer_default_text">load more</string>
+    <string name="drop_down_list_footer_loading_text">loading…</string>
+    <string name="drop_down_list_footer_no_more_text">no more</string>
+    <!--  -->
+    <string name="set_person_img">set personal picture</string>
+    <string name="system_person_img">system default picture</string>
+    <string name="select_from_phote">select from phote</string>
+    <string name="take_phote">take phote</string>
+    <string name="image_content">Image</string>
+    <string name="open_text">open</string>
+    <string name="close_text">pack</string>
+    <string name="ignore">Ignore</string>
+    <string name="ignore_cancel">Update</string>
+    <!-- 底部导航 -->
+    <string name="search_title">search</string>
+    <string name="search_hint">massive resources for search</string>
+    <string name="download_continue">continue</string>
+    <string name="save_now">save now</string>
+    <string name="hot_search_text">hot search</string>
+    <string name="rechange_text">rechange</string>
+    <string name="open">open</string>
+    <string name="queue">queue</string>
+    <string name="download_manage">Download Manage</string>
+    <string name="download_update">Download Update</string>
+    <string name="download_uninstall">Uninstall Manage</string>
+    <string name="download_favorite">Favorite</string>
+    <string name="install">install</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="all_select_text">all</string>
+    <string name="version_title">Version:</string>
+    <string name="comment_lab">Comment</string>
+    <string name="score_lab">Score</string>
+    <string name="do_comment">Comment</string>
+    <string name="no_comment">No Comment</string>
+    <string name="comment_hint">say something</string>
+    <string name="download">download</string>
+    <string name="cancel">Cancel</string>
+    <string name="pic_preview">picture preview</string>
+    <string name="register">register</string>
+    <string name="logout_attention">Warn Logout?</string>
+    <string name="account_title">account:</string>
+    <string name="account_hint">please enter account</string>
+    <string name="lastet_version">Is the latest version.</string>
+    <string name="email_title">email:</string>
+    <string name="email_hint">please enter email</string>
+    <string name="pwd_title">password:</string>
+    <string name="pwd_hint">please enter password</string>
+    <string name="pwd_repeat_title">repeat password:</string>
+    <string name="pwd_repeat_hint">Please repeat password</string>
+    <string name="login_now">login now</string>
+    <string name="forget_pwd">Forget Password?</string>
+    <string name="register_tip">No account registration immediately?</string>
+    <string name="use_other_account">Use Other Account</string>
+    <string name="install_fail_file_not_exist">The installation error, please check.</string>
+    <string name="download_remain_bytes">remain%1$s%2$s</string>
+    <string name="action_settings">settings</string>
+    <string name="guide_start">start</string>
+    <string name="app_brief_summary">Summary</string>
+    <string name="relate_news">relate news</string>
+    <string name="delete_text">delete</string>
+    <string name="login_out">login out</string>
+    <string name="login_out_success">Login Out Success</string>
+    <string name="register_agree">Registration of implied consent "user agreement"</string>
+    <string name="has_account_tip">Have Account? Login Now.</string>
+    <string name="notification_download_complete" msgid="840713937779273632">"Download Success"</string>
+    <string name="notification_download_failed" msgid="5343637375905111462">"Download Failure"</string>
+    <string name="notification_need_wifi_for_size" msgid="5973127997598540499">"The size of the file needs to be downloaded from the Wi-Fi"</string>
+    <string name="wifi_required_title" msgid="1995971416871498179">"The file is too large, not suitable for downloading by the network operator"</string>
+    <string name="wifi_required_body" msgid="1675692697446715831">"You must use the Wi-Fi to complete this <xliff:g id="SIZE">%s </xliff:g>download the file."\n\n"Click<xliff:g id="QUEUE_TEXT">%s </xliff:g>Start the download can be connected to the Wi-Fi network at the next time."</string>
+    <string name="wifi_recommended_title" msgid="7441589306734687400">"Later joined the download queue?"</string>
+    <string name="wifi_recommended_body" msgid="7574517147645381271">"Immediately start<xliff:g id="SIZE">%s </xliff:g> the download files may shorten the using time of the battery and / or lead to the use of mobile data connection (which leads to mobile operators in accordance with the provisions of the flow of packages in excess of charging you)."\n\n"Click here<xliff:g id="QUEUE_TEXT">%s</xliff:g>to start the download link to the Wi-Fi network at the next time."</string>
+    <string name="button_queue_for_wifi" msgid="422576726189179221">"Queue"</string>
+    <string name="button_cancel_download" msgid="2430166148737975604">"Cancel"</string>
+    <string name="button_start_now" msgid="792123674007840864">"Begin immediately"</string>
+    <string name="no_picture">Hide</string>
+    <string name="has_picture">Show</string>
+    <string name="no_need_update">Congratulations to you, all your application is the latest</string>
+    <string name="download_status_failure">Failure</string>
+    <string name="enter_key_word">Enter KeyWord</string>
+    <string name="one_key_install">One Key Installed</string>
+    <string name="no_alert_again">No Alert</string>
+    <string name="recommend_install">We recommend that you install the following alternate application</string>
+    <string name="user_group">User Group</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="my_level">My Level</string>
+    <string name="download_down">Download</string>
+
+    <!-- SweetAlert -->
+    <string name="dialog_ok">OK</string>
+    <string name="loading">Loading...</string>
+    <string name="dialog_close">Close</string>
+    <string name="dialog_ignore">Ignore</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="Ignore_text">Ignore this</string>
+    <string name="messenger_send_button_text">Send</string>
+    <string name="dialog_default_title">Kindly reminder!</string>
+    <!-- download -->
+    <string name="lab_downloadManager">Access download manager.</string>
+    <string name="desc_downloadManager">Allows the application to
+        access the download manager and to use it to download files.
+        Malicious applications can use this to disrupt downloads and access
+        private information.</string>
+    <string name="lab_downloadManagerAdvanced">Advanced download
+        manager functions.</string>
+    <string name="desc_downloadManagerAdvanced">Allows the application to
+        access the download manager\'s advanced functions.
+        Malicious applications can use this to disrupt downloads and access
+        private information.</string>
+    <string name="lab_downloadCompletedIntent">Send download
+        notifications.</string>
+    <string name="desc_downloadCompletedIntent">Allows the application
+        to send notifications about completed downloads. Malicious applications
+        can use this to confuse other applications that download
+        files.</string>
+    <string name="lab_downloadCacheNonPurgeable">Reserve space in the
+    download cache</string>
+    <string name="desc_downloadCacheNonPurgeable">Allows the application to
+    download files to the download cache which cannot be automatically deleted
+    when the download manager needs more space.</string>
+    <string name="lab_accessAllDownloads">Access all system
+    downloads</string>
+    <string name="desc_accessAllDownloads">Allows the application to view
+    and modify all initiated by any application on the system.</string>
+    <string name="download_unknown_title">&lt;Untitled&gt;</string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" and <xliff:g id="number" example="27">%d</xliff:g> more"</string>
+    <string name="download_title">Downloads</string>
+    <string name="download_no_downloads">No downloads.</string>
+    <string name="download_missing_title">&lt;Unknown></string>
+    <string name="download_menu_sort_by_size">Sort by size</string>
+    <string name="download_menu_sort_by_date">Sort by time</string>
+    <string name="download_queued">Queued</string>
+    <string name="download_running">In progress</string>
+    <string name="download_paused">Paused</string>
+    <string name="download_success">Complete</string>
+    <string name="download_error">Error</string>
+    <string name="download_open">Open</string>
+    <string name="download_install">Install</string>
+    <string name="dialog_title_not_available">Download Failed</string>
+    <string name="dialog_failed_body">Do you want to retry downloading the file later
+          or delete it from the queue?</string>
+    <string name="dialog_running_body">Do you want to pause downloading the file or cancel it from the queue?</string>
+    <string name="dialog_paused_body">Do you want to resume downloading the file or delete it from the queue?</string>
+    <string name="dialog_title_queued_body">File not yet available</string>
+    <string name="dialog_queued_body">This file is queued for future download.</string>
+    <string name="dialog_file_missing_body">The downloaded file cannot be found.</string>
+    <string name="dialog_insufficient_space_on_external">Cannot finish download. There is not
+        enough space on external storage.</string>
+    <string name="dialog_insufficient_space_on_cache">Cannot finish download. There is not enough
+        space on internal download storage.</string>
+    <string name="dialog_cannot_resume">Download interrupted. It cannot be resumed.</string>
+    <string name="dialog_file_already_exists">annot download. The destination file already exists.</string>
+    <string name="dialog_media_not_found">annot download. The external media is not available.</string>
+    <string name="download_no_application_title">Cannot open file</string>
+    <string name="download_remove">Remove</string>
+    <string name="download_delete">Delete</string>
+    <string name="download_pause">Pause</string>
+    <string name="download_resume">Resume</string>
+    <string name="download_keep_queued">Keep</string>
+    <string name="download_cancel_running">Cancel</string>
+    <string name="download_retry">Retry</string>
+    <string name="download_deselect_all">Clear selection</string>
+    <string name="download_queue">Queue</string>
+    
+     <string name="operation_update">更新</string>
+    <string name="download_status_downloading">下载中</string>
+    <string name="download_status_installed">打开</string>
+    <string name="download_start">开始下载</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	<ImageView
+		android:id="@+id/soft_logo"
+		android:layout_width="@dimen/kaka_50_dip"
+		android:layout_height="@dimen/kaka_50_dip"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/kaka_1_dip"
+		android:layout_marginLeft="@dimen/kaka_5_dip"
+		android:layout_marginRight="@dimen/kaka_5_dip"
+		android:layout_marginTop="@dimen/kaka_5_dip"
+		android:contentDescription="@null"
+		android:src="@drawable/img_default" />
+	<TextView
+		android:id="@+id/soft_name"
+		style="@style/text_h6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/soft_logo"
+		android:layout_centerHorizontal="true"
+		android:ellipsize="end"
+		android:gravity="center"
+		android:maxEms="5"
+		android:singleLine="true"
+		android:text="@string/soft_name"
+		android:textColor="@color/gray_6b" />
+</RelativeLayout>

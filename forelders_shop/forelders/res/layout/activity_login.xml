@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_user"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/account_hint"
+        android:singleLine="true" />
+
+    <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_edittext_bg"
+        android:drawableLeft="@drawable/icon_password"
+        android:drawableRight="@drawable/delete_selector"
+        android:hint="@string/pwd_hint"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_43_dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/forget_pwd_btn"
+            style="@style/text_h5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/kaka_8_dip"
+            android:background="@drawable/bg_press_gray"
+            android:padding="@dimen/kaka_8_dip"
+            android:text="@string/forget_pwd"
+            android:textColor="@color/gray_66" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/text_center_h2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_45_dip"
+        android:layout_margin="@dimen/kaka_8_dip"
+        android:background="@drawable/status_run_seletor"
+        android:text="@string/login_now"
+        android:textColor="@color/status_run" />
+
+    <TextView
+        android:id="@+id/register_tv"
+        style="@style/text_center_h4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/kaka_30_dip"
+        android:background="@drawable/bg_press_gray"
+        android:padding="@dimen/kaka_5_dip"
+        android:text="@string/register_tip"
+        android:textColor="@color/soft_base_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_30_dip"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/gray_6d" />
+
+        <TextView
+            style="@style/text_center_h5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/kaka_5_dip"
+            android:text="@string/use_other_account"
+            android:textColor="@color/status_wait" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_6d" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/kaka_8_dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/login_wb"
+            android:layout_width="@dimen/kaka_60_dip"
+            android:layout_height="@dimen/kaka_60_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/kaka_8_dip"
+            android:layout_toLeftOf="@+id/center"
+            android:background="@drawable/bg_press_gray"
+            android:contentDescription="@null"
+            android:src="@drawable/login_wb" />
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/login_qq"
+            android:layout_width="@dimen/kaka_60_dip"
+            android:layout_height="@dimen/kaka_60_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kaka_8_dip"
+            android:layout_toRightOf="@+id/center"
+            android:background="@drawable/bg_press_gray"
+            android:contentDescription="@null"
+            android:src="@drawable/login_qq" />
+    </RelativeLayout>
+
+</LinearLayout>

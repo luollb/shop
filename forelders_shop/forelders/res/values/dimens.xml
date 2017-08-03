@@ -1,0 +1,68 @@
+<resources>
+
+    <dimen name="list_padding">10dp</dimen>
+
+    <item name="selected_view" type="id"/>
+
+    <dimen name="ap_base_menu_shadow_offset">80dp</dimen>
+    <dimen name="ap_base_menu_shadow_width">16dp</dimen>
+    <dimen name="tab_top_fontsize">15sp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="font_size_l">18sp</dimen>
+    <dimen name="font_size_m">15sp</dimen>
+    <dimen name="font_size_s">12sp</dimen>
+    <!-- For buttons -->
+    <dimen name="common_text_size_large">18dp</dimen>
+    <!-- For list texts (top line) -->
+    <dimen name="common_text_size_middle">16dp</dimen>
+    <dimen name="common_text_size_middle_2">14dp</dimen>
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="common_text_size_small">13dp</dimen>
+    <dimen name="common_text_size_small_2">10dp</dimen>
+    <dimen name="common_text_size_small_3">12dp</dimen>
+    <dimen name="page_margin_width">12dp</dimen>
+    <!-- drop_down -->
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="checkmark_area">40dip</dimen>
+    <!-- Demension for home page top recommend image view -->
+    <!-- Dimension for loading drawable -->
+    <dimen name="space_small">6dp</dimen>
+    <dimen name="space_small_h">8dp</dimen>
+    <dimen name="space_medium">10dp</dimen>
+    <dimen name="space_medium_h">14dp</dimen>
+    <dimen name="space_large">20dp</dimen>
+    <dimen name="space_large_h">28dp</dimen>
+    <dimen name="width_small">54dp</dimen>
+    <dimen name="width_medium">90dp</dimen>
+    <dimen name="width_large">180dp</dimen>
+    <dimen name="height_small">12dp</dimen>
+    <dimen name="height_medium">20dp</dimen>
+    <dimen name="height_large">40dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="h0">@dimen/kaka_24_dip</dimen>
+    <dimen name="h1">@dimen/kaka_22_dip</dimen>
+    <dimen name="h2">@dimen/kaka_20_dip</dimen>
+    <dimen name="h3">@dimen/kaka_18_dip</dimen>
+    <dimen name="h4">@dimen/kaka_16_dip</dimen>
+    <dimen name="h5">@dimen/kaka_14_dip</dimen>
+    <dimen name="h6">@dimen/kaka_12_dip</dimen>
+    <dimen name="h7">@dimen/kaka_8_dip</dimen>
+    <dimen name="h8">@dimen/kaka_8_dip</dimen>
+    <dimen name="h9">@dimen/kaka_6_dip</dimen>
+    <!-- SweetAlert Dialog -->
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="player_panel_start_btn">50dp</dimen>
+    <dimen name="popup_gap">8dp</dimen>
+
+</resources>

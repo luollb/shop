@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/gray_6e"
+	android:orientation="vertical" >
+	<include
+		android:id="@+id/back_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		layout="@layout/back_title_view"
+		android:visibility="gone" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<ListView
+			android:id="@android:id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@color/white"
+			android:cacheColorHint="@color/list_view_bg_color"
+			android:divider="@color/gray_6e"
+			android:dividerHeight="1px"
+			android:fadingEdge="none"
+			android:listSelector="@drawable/bg_white_gray"
+			android:scrollbarThumbVertical="@drawable/scrollbar" />
+		<ImageView
+			android:id="@+id/to_top_btn"
+			android:layout_width="@dimen/kaka_30_dip"
+			android:layout_height="@dimen/kaka_30_dip"
+			android:layout_alignParentRight="true"
+			android:layout_margin="@dimen/kaka_6_dip"
+			android:background="@drawable/bg_press_gray"
+			android:contentDescription="@null"
+			android:visibility="gone" />
+		<ImageView
+			android:id="@+id/to_bottom_btn"
+			android:layout_width="@dimen/kaka_30_dip"
+			android:layout_height="@dimen/kaka_30_dip"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="@dimen/kaka_6_dip"
+			android:background="@drawable/bg_press_gray"
+			android:contentDescription="@null"
+			android:visibility="gone" />
+		<!-- Loading -->
+		<include
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			layout="@layout/loading" />
+	</RelativeLayout>
+</LinearLayout>

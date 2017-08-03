@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<android.support.v4.view.ViewPager
+		android:id="@+id/guide_viewpager"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<LinearLayout
+		android:id="@+id/guide_dots"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@android:color/transparent"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="@dimen/kaka_43_dip" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerInParent="true" >
+		<ImageView
+			android:id="@+id/splash"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_centerInParent="true"
+			android:contentDescription="@null"
+			android:scaleType="fitXY"
+			android:src="@drawable/splash" />
+		<ImageView
+			android:id="@+id/leftBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="@dimen/kaka_5_dip"
+			android:contentDescription="@null"
+			android:src="@drawable/bg_nav_guide_left"
+			android:visibility="gone" />
+		<ImageView
+			android:id="@+id/rightBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="@dimen/kaka_5_dip"
+			android:contentDescription="@null"
+			android:src="@drawable/bg_nav_guide_right"
+			android:visibility="gone" />
+	</RelativeLayout>
+</RelativeLayout>

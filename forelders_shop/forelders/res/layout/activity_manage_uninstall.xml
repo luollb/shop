@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/back_title_view" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/no_need_update"
+                style="@style/text_h2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/kaka_8_dip"
+                android:contentDescription="@null"
+                android:drawablePadding="@dimen/kaka_8_dip"
+                android:drawableTop="@drawable/default_big_bg"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="@string/no_need_update"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <cn.cy.mobilegames.yyjia.forelders.util.view.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/kaka_4_dip"
+                android:layout_marginRight="@dimen/kaka_4_dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/search_bar_edit_selector"
+                android:drawableLeft="@drawable/search_white"
+                android:hint="@string/enter_key_word"
+                android:singleLine="true"
+                android:textSize="15.0dip" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/listview_soft_show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:divider="@null" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/loading" />
+
+                <TextView
+                    android:id="@+id/dialog"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_edit_pressed"
+                    android:gravity="center"
+                    android:textColor="@color/status_run"
+                    android:textSize="30.0dip"
+                    android:visibility="invisible" />
+
+                <cn.cy.mobilegames.yyjia.forelders.util.view.SideBar
+                    android:id="@+id/sidrbar"
+                    android:layout_width="@dimen/kaka_18_dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/kaka_8_dip"
+    android:layout_marginTop="@dimen/kaka_8_dip"
+    android:background="@drawable/bg_press_gray"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/gray_6e"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/status_run" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kaka_70_dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/app_detail_img"
+            android:layout_width="@dimen/kaka_60_dip"
+            android:layout_height="@dimen/kaka_60_dip"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/kaka_5_dip"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_download_large" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/kaka_5_dip" >
+
+            <TextView
+                android:id="@+id/app_name"
+                style="@style/black_h5_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/kaka_5_dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/download_percent"
+                style="@style/sumary_color_h6_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/app_version"
+                    style="@style/sumary_color_h6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <ProgressBar
+                    android:id="@+id/download_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/kaka_5_dip"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_style"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <TextView
+                    android:id="@+id/status_text"
+                    style="@style/sumary_color_h6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/size_text"
+                    style="@style/sumary_color_h6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+
+            <Button
+                android:id="@+id/delete_btn"
+                style="@style/text_center_h6"
+                android:layout_width="@dimen/kaka_52_dip"
+                android:layout_height="@dimen/kaka_25_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/kaka_3_dip"
+                android:background="@drawable/status_run_seletor"
+                android:text="@string/delete_text"
+                android:textColor="@color/status_run" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_6e" />
+
+</LinearLayout>
